@@ -1,0 +1,78 @@
+202 109
+https://ganjoor.net/shahnematollah/motsh
+https://ganjoor.net/shahnematollah/tarjeesh
+https://ganjoor.net/shahnematollah/ghazalshv
+https://ganjoor.net/shahnematollah/mofradatsh
+https://ganjoor.net/shahnematollah/ghetesh
+https://ganjoor.net/shahnematollah/dobeytihash
+https://ganjoor.net/shahnematollah/masnavish
+https://ganjoor.net/shahnematollah/robaeeshv
+https://ganjoor.net/shahnematollah/ghasidesh
+https://ganjoor.net/shahnematollah/motsh/sh1 is passed
+https://ganjoor.net/shahnematollah/motsh/sh2 is passed
+https://ganjoor.net/shahnematollah/motsh/sh3 is passed
+https://ganjoor.net/shahnematollah/motsh/sh4 is passed
+https://ganjoor.net/shahnematollah/motsh/sh5 is passed
+https://ganjoor.net/shahnematollah/tarjeesh/sh1 is passed
+https://ganjoor.net/shahnematollah/tarjeesh/sh2 is passed
+https://ganjoor.net/shahnematollah/tarjeesh/sh3 is passed
+https://ganjoor.net/shahnematollah/tarjeesh/sh4 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh1 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh2 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh3 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh4 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh5 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh6 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh7 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh8 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh9 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh10 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh11 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh12 is passed
+https://ganjoor.net/shahnematollah/ghazalshv/sh13 is passed
+Traceback (most recent call last):
+  File "/home/soleimanimohammad15/Persian-poems/ganjoorscrape.py", line 166, in <module>
+    combined_list = urlshaertolistsher(poet_url)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/ganjoorscrape.py", line 10, in urlshaertolistsher
+    listurlpagetoListBeyt(listurls)
+  File "/home/soleimanimohammad15/Persian-poems/ganjoorscrape.py", line 62, in listurlpagetoListBeyt
+    response = requests.get(new_url_with_sh)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/sessions.py", line 746, in send
+    r.content
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/models.py", line 902, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/requests/models.py", line 820, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/urllib3/response.py", line 1057, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/urllib3/response.py", line 1209, in read_chunked
+    chunk = self._handle_chunk(amt)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soleimanimohammad15/Persian-poems/myenv/lib/python3.11/site-packages/urllib3/response.py", line 1146, in _handle_chunk
+    value = self._fp._safe_read(amt)  # type: ignore[union-attr]
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 630, in _safe_read
+    data = self.fp.read(amt)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1311, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1167, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
